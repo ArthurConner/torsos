@@ -8,22 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0EE74A6220AE1B3E001162DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE74A6120AE1B3E001162DD /* AppDelegate.swift */; };
-		0EE74A6420AE1B3E001162DD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE74A6320AE1B3E001162DD /* FirstViewController.swift */; };
+		0EE74A6420AE1B3E001162DD /* InputHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE74A6320AE1B3E001162DD /* InputHealthViewController.swift */; };
 		0EE74A6620AE1B3E001162DD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE74A6520AE1B3E001162DD /* SecondViewController.swift */; };
 		0EE74A6920AE1B3E001162DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE74A6720AE1B3E001162DD /* Main.storyboard */; };
 		0EE74A6B20AE1B40001162DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE74A6A20AE1B40001162DD /* Assets.xcassets */; };
 		0EE74A6E20AE1B40001162DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE74A6C20AE1B40001162DD /* LaunchScreen.storyboard */; };
+		0EE74A7820AE1B9F001162DD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE74A7720AE1B9F001162DD /* HealthKit.framework */; };
+		0EE74A7C20AE1EE1001162DD /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE74A7B20AE1EE1001162DD /* MeasureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EE74A5E20AE1B3E001162DD /* Virt You Torsos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virt You Torsos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE74A6120AE1B3E001162DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0EE74A6320AE1B3E001162DD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0EE74A6320AE1B3E001162DD /* InputHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHealthViewController.swift; sourceTree = "<group>"; };
 		0EE74A6520AE1B3E001162DD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0EE74A6820AE1B3E001162DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EE74A6A20AE1B40001162DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE74A6D20AE1B40001162DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EE74A6F20AE1B40001162DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE74A7520AE1B9F001162DD /* Virt You Torsos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Virt You Torsos.entitlements"; sourceTree = "<group>"; };
+		0EE74A7720AE1B9F001162DD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0EE74A7B20AE1EE1001162DD /* MeasureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE74A7820AE1B9F001162DD /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				0EE74A6020AE1B3E001162DD /* Virt You Torsos */,
 				0EE74A5F20AE1B3E001162DD /* Products */,
+				0EE74A7620AE1B9F001162DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,25 @@
 		0EE74A6020AE1B3E001162DD /* Virt You Torsos */ = {
 			isa = PBXGroup;
 			children = (
+				0EE74A7520AE1B9F001162DD /* Virt You Torsos.entitlements */,
 				0EE74A6120AE1B3E001162DD /* AppDelegate.swift */,
-				0EE74A6320AE1B3E001162DD /* FirstViewController.swift */,
+				0EE74A6320AE1B3E001162DD /* InputHealthViewController.swift */,
 				0EE74A6520AE1B3E001162DD /* SecondViewController.swift */,
+				0EE74A7B20AE1EE1001162DD /* MeasureModel.swift */,
 				0EE74A6720AE1B3E001162DD /* Main.storyboard */,
 				0EE74A6A20AE1B40001162DD /* Assets.xcassets */,
 				0EE74A6C20AE1B40001162DD /* LaunchScreen.storyboard */,
 				0EE74A6F20AE1B40001162DD /* Info.plist */,
 			);
 			path = "Virt You Torsos";
+			sourceTree = "<group>";
+		};
+		0EE74A7620AE1B9F001162DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EE74A7720AE1B9F001162DD /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +116,17 @@
 				TargetAttributes = {
 					0EE74A5D20AE1B3E001162DD = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -138,9 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE74A7C20AE1EE1001162DD /* MeasureModel.swift in Sources */,
 				0EE74A6620AE1B3E001162DD /* SecondViewController.swift in Sources */,
 				0EE74A6220AE1B3E001162DD /* AppDelegate.swift in Sources */,
-				0EE74A6420AE1B3E001162DD /* FirstViewController.swift in Sources */,
+				0EE74A6420AE1B3E001162DD /* InputHealthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Virt You Torsos/Virt You Torsos.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GZYFCNRY8;
 				INFOPLIST_FILE = "Virt You Torsos/Info.plist";
@@ -302,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Virt You Torsos/Virt You Torsos.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4GZYFCNRY8;
 				INFOPLIST_FILE = "Virt You Torsos/Info.plist";
